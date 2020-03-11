@@ -26,3 +26,54 @@ const upgradeHubMarker = L.marker(coordenadasUpgradeHub).addTo(map).bindPopup('E
 const adalabMarker = L.marker(coordenadasAdalab).addTo(map).bindPopup('Esto es Adalab')
 
 const keepCodingMarker = L.marker(coordenadasKeepCoding).addTo(map).bindPopup('Esto es Keep Coding')
+
+const infection1 = L.circle(coordenadasTheBridge, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(map)
+
+const infection2 = L.circle(coordenadasNeoland, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(map)
+
+const infection3 = L.circle(coordenadasIronHack, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(map)
+
+const infection4 = L.circle(coordenadasUpgradeHub, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(map)
+
+const infection5 = L.circle(coordenadasAdalab, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(map)
+
+const infection6 = L.circle(coordenadasKeepCoding, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(map)
+
+const poliginoInfectionPlus = L.polygon([
+    coordenadasTheBridge,
+    coordenadasUpgradeHub,
+    coordenadasNeoland,
+    coordenadasAdalab,
+    coordenadasIronHack,
+    coordenadasKeepCoding,
+]).addTo(map)
